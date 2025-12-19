@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Burgers PNC Website</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 </head>
@@ -12,45 +13,49 @@
     <div class="header">
         <div class="container">
             <nav class="navbar">
-                <div class="navdiv">
-                    <div class="logo"><a href="#"><i class="fa-solid fa-burger"></i> BURGERS PNC</a></div>
+                <div class="navdiv" id="navdiv">
+                    <div class="logo"><a href="index.html"><i class="fa-solid fa-burger"></i> BURGERS PNC</a></div>
+                     <i class="bx bx-menu" id="menu-icon"></i>
                        <ul>
-                           <li><a href="#">Home</a></li>
-                           <li><a href="#">About Us</a></li>
-                           <li><a href="#">Shop</a></li>
-                           <li><a href="#">Menu</a></li>
-                           <li><a href="#">Blog</a></li>
-                           <li><a href="#">Gallery</a></li>
-                           <li><a href="#">Contact us</a></li>
-                           <button><a href="cart"> <i class="fa-solid fa-cart-shopping"></i> Cart </a></button>
+                           <!-- Updated navigation links to point to actual pages -->
+                           <li><a href="index.html" class="active">Home</a></li>
+                           <li><a href="about.html">About Us</a></li>
+                           <li><a href="shop.html">Shop</a></li>
+                           <li><a href="menu.html">Menu</a></li>
+                           <li><a href="blog.html">Blog</a></li>
+                           <li><a href="gallery.html">Gallery</a></li>
+                           <li><a href="contact.html">Contact us</a></li>
+                           <button><a href="cart.html"> <i class="fa-solid fa-cart-shopping"></i> Cart <span id="cart-count">0</span></a></button>
                        </ul>
                </div>
             </nav>           
         </div>
-
+                    <div class=".welcome">
                         <h2>Welcome to Burgers PNC</h2>
 
                         <div class="hero-image">
-                           <img src="image/Pesto Turkey Burger (2).png" alt="" srcset="">
+                           <img src="image/pesto-turkey-burger-2.png" alt="" srcset="">
                         </div>
 
                        <div class="image">
                             <p>Crafting Timeless Flavors. One Bite at a Time </p>
 
-                            <div class="image1"><img src="image/IMAGE 1.jpg" alt="img1" srcset=""></div>
+                            <div class="image1"><img src="image/image-1.jpg" alt="img1" srcset=""></div>
                             
-                            <div class="image2"><img src="image/IMAGE 2.jpg" alt="img2" srcset=""></div>
+                            <div class="image2"><img src="image/image-2.jpg" alt="img2" srcset=""></div>
                             
-                            <div class="image3"><img src="image/IMAGE 3.jpg" alt="img3" srcset=""></div>
+                            <div class="image3"><img src="image/image-3.jpg" alt="img3" srcset=""></div>
                       </div>
                          
                       <div class="button-a">
-                            <button><a href="view menu"> View Menu <i class="fa-regular fa-eye"></i></a></button>
+                            <!-- Fixed View Menu button link -->
+                            <button><a href="menu.html"> View Menu <i class="fa-regular fa-eye"></i></a></button>
                       </div>
+                    </div>
     </div>
       
 
-    <main>
+    <main class="main" id="main">
         <div class="p1">
             WEEKLY SPECIALS
         </div>
@@ -64,80 +69,81 @@
             <div class="product-container">
                 <div class="product-card">
                     <div class="product-image">
-                        <a href="#"><img src="image/Pesto Turkey Burger.png" class="product-thumb" alt="#"></a>
+                        <!-- Made product images clickable to shop page -->
+                        <a href="shop.html"><img src="image/pesto-turkey-burger.png" class="product-thumb" alt="#"></a>
                     </div>
                     <div class="product-info">
-                        <a href="#"><p class="product-brand">Pesto Turkey Burger</p></a>
+                        <a href="shop.html"><p class="product-brand">Pesto Turkey Burger</p></a>
                         <p class="product-icon"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                         <span class="price">$15.00 USD</span><span class="actual-price">$20.00 USD</span>
                     </div>
                 </div>
                 <div class="product-card">
                     <div class="product-image">
-                        <a href="#"><img src="image/Bacon Lover's Burger.png" class="product-thumb" alt="#"></a>
+                        <a href="shop.html"><img src="image/bacon-lovers-burger.png" class="product-thumb" alt="#"></a>
                     </div>
                     <div class="product-info">
-                        <a href="#"><p class="product-brand">Bacon Lover's Burger</p></a>
+                        <a href="shop.html"><p class="product-brand">Bacon Lover's Burger</p></a>
                         <p class="product-icon"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                         <span class="price">$9.00 USD</span><span class="actual-price">$13.00 USD</span>
                     </div>
                 </div>
                 <div class="product-card">
                     <div class="product-image">
-                        <a href="#"><img src="image/Mushroom Swiss Burger.png" class="product-thumb" alt="#"></a>
+                        <a href="shop.html"><img src="image/mushroom-swiss-burger.png" class="product-thumb" alt="#"></a>
                     </div>
                     <div class="product-info">
-                        <a href="#"><p class="product-brand">Mushroom Swiss Burger</p></a>
+                        <a href="shop.html"><p class="product-brand">Mushroom Swiss Burger</p></a>
                         <p class="product-icon"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                         <span class="price">$10.00 USD</span><span class="actual-price">$20.00 USD</span>
                     </div>
                 </div>
                 <div class="product-card">
                     <div class="product-image">
-                        <a href="#"><img src="image/BBQ Ranch Burger.png" class="product-thumb" alt="#"></a>
+                        <a href="shop.html"><img src="image/bbq-ranch-burger.png" class="product-thumb" alt="#"></a>
                     </div>
                     <div class="product-info">
-                        <a href="#"><p class="product-brand">BBQ Ranch Burger</p></a>
+                        <a href="shop.html"><p class="product-brand">BBQ Ranch Burger</p></a>
                         <p class="product-icon"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                         <span class="price">$12.00 USD</span><span class="actual-price">$15.00 USD</span>
                     </div>
                 </div>
                 <div class="product-card">
                     <div class="product-image">
-                        <a href="#"><img src="image/Caprese Burger.png" class="product-thumb" alt="#"></a>
+                        <a href="shop.html"><img src="image/caprese-burger.png" class="product-thumb" alt="#"></a>
                     </div>
                     <div class="product-info">
-                        <a href="#"><p class="product-brand">Camprese Burger</p></a>
+                        <a href="shop.html"><p class="product-brand">Camprese Burger</p></a>
                         <p class="product-icon"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                         <span class="price">$13.00 USD</span><span class="actual-price">$20.00 USD</span>
                     </div>
                 </div>
                 <div class="product-card">
                     <div class="product-image">
-                        <a href="#"><img src="image/TNC Vegggie Delight.png" class="product-thumb" alt="#"></a>
+                        <a href="shop.html"><img src="image/tnc-vegggie-delight.png" class="product-thumb" alt="#"></a>
                     </div>
                     <div class="product-info">
-                        <a href="#"><p class="product-brand">PNC Veggie Delight</p></a>
+                        <a href="shop.html"><p class="product-brand">PNC Veggie Delight</p></a>
                         <p class="product-icon"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                         <span class="price">$10.00 USD</span><span class="actual-price">$15.00 USD</span>
                     </div>
                 </div>
                 <div class="product-card">
                     <div class="product-image">
-                        <a href="#"><img src="image/Pesto Turkey Burger (2).png" class="product-thumb" alt="#"></a>
+                        <a href="shop.html"><img src="image/pesto-turkey-burger-2.png" class="product-thumb" alt="#"></a>
                     </div>
                     <div class="product-info">
-                        <a href="#"><p class="product-brand">Pesto Turkey Burger</p></a>
+                        <a href="shop.html"><p class="product-brand">Pesto Turkey Burger</p></a>
                         <p class="product-icon"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                         <span class="price">$15.00 USD</span><span class="actual-price">$20.00 USD</span>
                     </div>
                 </div>
                 <div class="product-card">
                     <div class="product-image">
-                        <a href="#"><img src="image/TNC Heaven Burger.png" class="product-thumb" alt="#"></a>
+                        <a href="shop.html"><img src="image/tnc-heaven-burger.png" class="product-thumb" alt="#"></a>
                     </div>
                     <div class="product-info">
-                        <a href="#"><p class="product-brand">PNC Heaven Burger</p></a>
+                        <a href="shop.html"><p class="product-brand">PNC Heaven Burger</p></a>
                         <p class="product-icon"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                         <span class="price">$24.00 USD</span><span class="actual-price">$30.00 USD</span>
                     </div>
@@ -148,16 +154,17 @@
 
    <section class="section1">
       <div class="hero-image1">
-        <img src="image/Hero-burger 2.png" alt="#" >
+        <img src="image/hero-burger-2.png" alt="#" >
       </div>
       <div class="experience">
-         EXPERIENCE CULINARY EXELLENCE AT BURGER PNC
+         EXPERIENCE CULINARY EXCELLENCE AT BURGER PNC
       </div>
       <div class="info">
          At Burger TNC, our commitment to you is unwavering - we consistently deliver an exceptional standard of quality in every dish we serve. Your satisfaction is our top priority, and we take pride in using only the finest, locally sourced ingredients to craft mouthwatering creations.
       </div>
       <div class="button-b">
-         <button><a href="#"> View Menu <i class="fa-regular fa-eye"></i></a></button>
+         <!-- Fixed button link -->
+         <button><a href="menu.html"> View Menu <i class="fa-regular fa-eye"></i></a></button>
       </div>
   </section>
 
@@ -165,7 +172,8 @@
     <div class="box1">
         <div class="off">50% off</div>
         <p> A SWEET AND SAVORY TWIST, SERVED WITH CHIPOTLE MAYO</p>
-        <button><a href="#">Order Now <i class="fa-solid fa-bag-shopping"></i></a></button>
+        <!-- Fixed Order Now button link -->
+        <button><a href="shop.html">Order Now <i class="fa-solid fa-bag-shopping"></i></a></button>
     </div>
     
     <div class="box2">
@@ -174,14 +182,15 @@
     </div>
     <div class="box3">
         <p>SUPER-FAST DELIVERY FOR ONLINE ORDERS! </p>
-        <img src="image/delivery bike.png" alt="" srcset="">
+        <img src="image/delivery-bike.png" alt="" srcset="">
     </div>
     <div class="box4">
         <p class="spicy">SPICY</p> 
         <p class="time">LIMITED-TIME SPECIAL</p>
         <p class="double">DOUBLE THE DELIGHT!</p>
         <p class="price">50% OFF</p>
-        <button><a href="#">View Menu <i class="fa-regular fa-eye"></i></a></button>
+        <!-- Fixed View Menu button link -->
+        <button><a href="menu.html">View Menu <i class="fa-regular fa-eye"></i></a></button>
     </div>
   </div>
 
@@ -189,12 +198,13 @@
     <div class="p2">OUR REGULAR MENU</div>
     <div class="nav2">
         <ul>
-            <li><a href="#"><span>All</span></a></li>
-            <li><a href="#">Classic Burger</a></li>
-            <li><a href="#">Gourment Creations</a></li>
-            <li><a href="#">Specilaty Burgers</a></li>
-            <li><a href="#">Sides</a></li>
-            <li><a href="#">Drinks</a></li>
+            <!-- Made menu category links functional -->
+            <li><a href="menu.html"><span>All</span></a></li>
+            <li><a href="menu.html">Classic Burger</a></li>
+            <li><a href="menu.html">Gourmet Creations</a></li>
+            <li><a href="menu.html">Specialty Burgers</a></li>
+            <li><a href="menu.html">Sides</a></li>
+            <li><a href="menu.html">Drinks</a></li>
         </ul>
     </div>
 
@@ -202,84 +212,86 @@
         <div class="product-container1">
             <div class="product-card">
                 <div class="product-image">
-                    <a href="#"><img src="image/Pesto Turkey Burger.png" class="product-thumb" alt=""></a>
+                    <a href="shop.html"><img src="image/pesto-turkey-burger.png" class="product-thumb" alt=""></a>
                 </div>
                 <div class="product-info">
-                    <a href="#"><p class="product-brand">Pesto Turkey Burger</p></a>
+                    <a href="shop.html"><p class="product-brand">Pesto Turkey Burger</p></a>
                     <p class="product-icon"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                     <span class="price">$15.00 USD</span>
                 </div>
             </div>
             <div class="product-card">
                 <div class="product-image">
-                    <a href="#"><img src="image/Bacon Lover's Burger.png" class="product-thumb" alt=""></a>
+                    <a href="shop.html"><img src="image/bacon-lovers-burger.png" class="product-thumb" alt=""></a>
                 </div>
                 <div class="product-info">
-                    <a href="#"><p class="product-brand">Bacon Lover's Burger</p></a>
+                    <a href="shop.html"><p class="product-brand">Bacon Lover's Burger</p></a>
                     <p class="product-icon"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                     <span class="price">$13.00 USD</span>
                 </div>
             </div>
             <div class="product-card">
                 <div class="product-image">
-                    <a href="#"><img src="image/Mushroom Swiss Burger.png" class="product-thumb" alt=""></a>
+                    <a href="shop.html"><img src="image/mushroom-swiss-burger.png" class="product-thumb" alt=""></a>
                 </div>
                 <div class="product-info">
-                    <a href="#"><p class="product-brand">Mushroom Swiss Burger</p></a>
+                    <a href="shop.html"><p class="product-brand">Mushroom Swiss Burger</p></a>
                     <p class="product-icon"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                     <span class="price">$20.00 USD</span>
                 </div>
             </div>
             <div class="product-card">
                 <div class="product-image">
-                    <a href="#"><img src="image/BBQ Ranch Burger.png" class="product-thumb" alt=""></a>
+                    <a href="shop.html"><img src="image/bbq-ranch-burger.png" class="product-thumb" alt=""></a>
                 </div>
                 <div class="product-info">
-                    <a href="#"><p class="product-brand">BBQ Ranch Burger</p></a>
+                    <a href="shop.html"><p class="product-brand">BBQ Ranch Burger</p></a>
                     <p class="product-icon"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                     <span class="price">$18.00 USD</span>
                 </div>
             </div>
             <div class="product-card">
                 <div class="product-image">
-                    <a href="#"><img src="image/Caprese Burger.png" class="product-thumb" alt=""></a>
+                    <a href="shop.html"><img src="image/caprese-burger.png" class="product-thumb" alt=""></a>
                 </div>
                 <div class="product-info">
-                    <a href="#"><p class="product-brand">Camprese Burger</p></a>
+                    <a href="shop.html"><p class="product-brand">Camprese Burger</p></a>
                     <p class="product-icon"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                     <span class="price">$13.00 USD</span>
                 </div>
             </div>
             <div class="product-card">
                 <div class="product-image">
-                    <a href="#"><img src="image/TNC Vegggie Delight.png" class="product-thumb" alt=""></a>
+                    <a href="shop.html"><img src="image/tnc-vegggie-delight.png" class="product-thumb" alt=""></a>
                 </div>
                 <div class="product-info">
-                    <a href="#"><p class="product-brand">PNC Veggie Delight</p></a>
+                    <a href="shop.html"><p class="product-brand">PNC Veggie Delight</p></a>
                     <p class="product-icon"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                     <span class="price">$10.00 USD</span>
                 </div>
             </div>
             <div class="product-card">
                 <div class="product-image">
-                    <a href="#"><img src="image/Pesto Turkey Burger (2).png" class="product-thumb" alt=""></a>
+                    <a href="shop.html"><img src="image/pesto-turkey-burger-2.png" class="product-thumb" alt=""></a>
                 </div>
                 <div class="product-info">
-                    <a href="#"><p class="product-brand">Pesto Turkey Burger</p></a>
+                    <a href="shop.html"><p class="product-brand">Pesto Turkey Burger</p></a>
                     <p class="product-icon"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                     <span class="price">$15.00 USD</span>
                 </div>
             </div>
             <div class="product-card">
                 <div class="product-image">
-                    <a href="#"><img src="image/TNC Heaven Burger.png" class="product-thumb" alt=""></a>
+                    <a href="shop.html"><img src="image/tnc-heaven-burger.png" class="product-thumb" alt=""></a>
                 </div>
                 <div class="product-info">
-                    <a href="#"><p class="product-brand">PNC Heaven Burger</p></a>
+                    <a href="shop.html"><p class="product-brand">PNC Heaven Burger</p></a>
                     <p class="product-icon"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></p>
                     <span class="price">$24.00 USD</span>
                 </div>
             </div>
+        </div>
+    </div>
   </main>
 
   <main class="main3">
@@ -290,28 +302,28 @@
         <tr>
             <td>
                 <div class="table-image">
-                    <img src="./image/burger icon.png" alt="">
+                    <img src="./image/burger-icon.png" alt="">
                 </div>
                 <p class="td-1">Culinary Excellence</p>
                 <p class="td-2">Indulge in a feast of flavors crafted by our skilled chefs, using premium, locally sourced ingredients. TNC Catering ensures a culinary experience that delights and impresses</p>
             </td>
             <td>
                 <div class="table-image">
-                    <img src="image/menu icon.png" alt="#">
+                    <img src="image/menu-icon.png" alt="#">
                 </div>
                 <p class="td-1">Customizable Menus</p>
                 <p class="td-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt illo maiores repudiandae! Dolorum veritatis maiores vero non est hic quisquam.</p>
             </td>
             <td>
                 <div class="table-image">
-                    <img src="image/room-service icon.png" alt="#">
+                    <img src="image/room-service-icon.png" alt="#">
                 </div>
                 <p class="td-1">Professional Service</p>
                 <p class="td-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias totam magnam voluptas libero ex. Recusandae impedit officia quas dolorem voluptate.</p>
             </td>
             <td>
                 <div class="table-image">
-                    <img src="image/occasion icon.png" alt="#">
+                    <img src="image/occasion-icon.png" alt="#">
                 </div>
                 <p class="td-1">Flexibility for Every Occasion</p>
                 <p class="td-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque quisquam at praesentium reiciendis enim corrupti.</p>
@@ -320,28 +332,28 @@
         <tr>
             <td>
                 <div class="table-image">
-                    <img src="image/quality icon.png" alt="">
+                    <img src="image/quality-icon.png" alt="">
                 </div>
                 <p class="td-1">Quality Beyond Expectations</p>
                 <p class="td-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet, exercitationem. Cum natus necessitatibus illo consequatur nostrum assumenda accusantium veritatis aut.</p>
             </td>
             <td>
                 <div class="table-image">
-                    <img src="image/offer icon.png" alt="">
+                    <img src="image/offer-icon.png" alt="">
                 </div>
                 <p class="td-1">Special Offer for Hosts</p>
                 <p class="td-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur tenetur quo aliquid vitae aliquam cupiditate odio ipsa incidunt pariatur consequuntur.</p>
             </td>
             <td>
                 <div class="table-image">
-                    <img src="image/booking icon.png" alt="">
+                    <img src="image/booking-icon.png" alt="">
                 </div>
-                <p class="td-1">Hassel-Free Booking</p>
+                <p class="td-1">Hassle-Free Booking</p>
                 <p class="td-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, autem! Vitae fugiat beatae architecto libero optio facere blanditiis reiciendis rem.</p>
             </td>
             <td>
                 <div class="table-image">
-                    <img src="image/burger icon.png" alt="">
+                    <img src="image/burger-icon.png" alt="">
                 </div>
                 <p class="td-1">Exquisite Presentation</p>
                 <p class="td-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci animi voluptatum perspiciatis? Eius, sed veniam.</p>
@@ -358,7 +370,7 @@
 
     <div class="border">
     <div class="office">
-        "PNC Catering turned our office event into a culinary delight! The presentation was stunning, and every bite was bursting with flavor. The customization options made it easy to cater to everyone's preferences. A definite hit!"
+        "PNC Catering turned our office event into a gastronomic delight! The burgers were cooked to perfection, and the customizable menu allowed us to cater to everyone's taste. The professional service and presentation exceeded our expectations."
         <span> 
         <img src="image/image3.png">
         Sururat Omotoyosi
@@ -366,7 +378,7 @@
         </span>
     </div>
     <div class="juicy">
-        "I recently visited Burger TNC, and it was a great experience. The burgers are juicy and flavourful, with a variety of creative toppings to choose from. Overall, it’s a solid spot for a delicious burger and I’ll definitely be back!"
+        "I recently visited Burger TNC, and it was a great experience. The burgers are juicy and flavourful, with a variety of creative toppings to choose from. Overall, it's a solid spot for a delicious burger and I'll definitely be back!"
         <span>
         <img src="image/image4.png">
         Muhammed Sururat
@@ -384,17 +396,18 @@
         <div class="div1">
             <img src="image/image-1-p-500.png" alt="" srcset="">
             <p class="to1">How to/Tutorial</p>
-            <p class="the1">Flavourful Tales From The PNC Burger Kitchen Unveiled.</p>
+            <!-- Made blog post title clickable -->
+            <p class="the1"><a href="blog.html">Flavourful Tales From The PNC Burger Kitchen Unveiled.</a></p>
         </div>
         <div class="div2">
             <img src="image/image-6-p-500.png" alt="" srcset="">
             <p class="to2">Made by PNC</p>
-            <p class="the2"> Time Burger Extravaganza With Seasonal Sensations.</p>
+            <p class="the2"><a href="blog.html">Time Burger Extravaganza With Seasonal Sensations.</a></p>
         </div>
         <div class="div3">
             <img src="image/image-p-500.png" alt="" srcset="">
             <p class="to3">Fast Food</p>
-            <p class="the3">PNC Burgers Blog Unveils Stories Behind The Grill And Beyond.</p>
+            <p class="the3"><a href="blog.html">PNC Burgers Blog Unveils Stories Behind The Grill And Beyond.</a></p>
         </div>
     </div>
   </section>
@@ -403,7 +416,8 @@
     <!-- Logo -->
     <div class="footer-column">
         <div class="logo1">
-             <a href="#"><i class="fa-solid fa-burger"></i> BURGERS PNC</a>
+             <!-- Fixed footer logo link -->
+             <a href="index.html"><i class="fa-solid fa-burger"></i> BURGERS PNC</a>
         </div>
        <p class="savor">Savor Home Style Delights, One Bite Delivers Joy.</p>
     </div>
@@ -435,7 +449,8 @@
             <i class="fa-brands fa-facebook-f"></i>
             <i class="fa-brands fa-x-twitter"></i>
             <i class="fa-brands fa-pinterest-p"></i>
-            <i class="fa-brands fa-linkedin"></i>  
+            <i class="fa-brands fa-linkedin"></i>
+        </p>
     </div>
   </footer>
 
@@ -444,6 +459,7 @@
   </div>
 
 
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

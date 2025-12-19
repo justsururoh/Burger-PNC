@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Burgers PNC</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+<body>
+    <header class="subpage-header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="navdiv" id="navdiv">
+                    <div class="logo"><a href="index.html"><i class="fa-solid fa-burger"></i> BURGERS PNC</a></div>
+                    <i class="bx bx-menu" id="menu-icon"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                        <button onclick="location.href='cart.html'" aria-label="Open cart" class="active"> <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i> <span class="visually-hidden">Cart</span> <span id="cart-count">0</span></button>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="page-title">
+            <h1>Your Cart</h1>
+            <p>Review Your Order</p>
+        </div>
+    </header>
+
+    <main class="cart-main" id="main-content">
+        <div class="cart-container">
+            <div class="cart-items" id="cart-items">
+                <!-- Cart items will be loaded here by JavaScript -->
+            </div>
+
+            <div class="cart-summary">
+                <h2>Order Summary</h2>
+                <div class="summary-row">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">$0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Delivery Fee:</span>
+                    <span id="delivery-fee">$5.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Tax (7.5%):</span>
+                    <span id="tax">$0.00</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Total:</span>
+                    <span id="total">$0.00</span>
+                </div>
+                <button class="checkout-btn" onclick="checkout()">
+                    Proceed to Checkout <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <a href="shop.html" class="continue-shopping">
+                    <i class="fa-solid fa-arrow-left"></i> Continue Shopping
+                </a>
+            </div>
+        </div>
+
+        <div class="empty-cart" id="empty-cart" style="display: none;">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <h2>Your Cart is Empty</h2>
+            <p>Looks like you haven't added any items to your cart yet.</p>
+            <a href="shop.html" class="shop-btn">Start Shopping</a>
+        </div>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="footer-column">
+            <div class="logo1">
+                <a href="index.html"><i class="fa-solid fa-burger"></i> BURGERS PNC</a>
+            </div>
+            <p class="savor">Savor Home Style Delights, One Bite Delivers Joy.</p>
+        </div>
+
+        <div class="footer-column1">
+            <span class="h3">Contact Us</span>
+            <p><i class="fa-solid fa-house"></i> 45, Arena Street, Magodo, Lagos.</p>
+            <p><i class="fa-solid fa-phone-volume"></i> (+243) 8030298567</p>
+            <p><i class="fa-regular fa-envelope"></i> hello@gmail.com</p>
+        </div>
+
+        <div class="footer-column2">
+            <span class="h3">Opening Hours</span>
+            <p>Monday to Friday: 9 AM - 6 PM</p>
+            <p>Saturday: 10 AM - 4 PM</p>
+            <p>Sunday: Closed</p>
+        </div>
+
+        <div class="footer-column3">
+            <span class="h3">Newsletter Subscribe</span>
+            <p>Stay in the Loop: Unlock Exclusive Offers, Culinary Insights, and More.</p>
+            <input type="email" id="email" placeholder="Your email">
+            <button onclick="subscribeNewsletter()">Subscribe</button>
+            <p id="subscribe-message"></p>
+            <p>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-pinterest-p"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </p>
+        </div>
+    </footer>
+
+    <div class="footer">
+        <p>Copyright &copy; 2025 Burger PNC | Designed by justsururoh.</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

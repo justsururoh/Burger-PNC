@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Burgers PNC</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+<body>
+    <header class="subpage-header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="navdiv" id="navdiv">
+                    <div class="logo"><a href="index.html"><i class="fa-solid fa-burger"></i> BURGERS PNC</a></div>
+                    <i class='bx bx-menu' id="menu-icon"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html" class="active">Contact us</a></li>
+                        <button onclick="location.href='cart.html'" aria-label="Open cart"> <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i> <span class="visually-hidden">Cart</span> <span id="cart-count">0</span></button>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="page-title">
+            <h1>Contact Us</h1>
+            <p>Get in Touch With Us</p>
+        </div>
+    </header>
+
+    <main class="contact-main" id="main-content">
+        <div class="contact-info">
+            <div class="contact-card">
+                <i class="fa-solid fa-location-dot"></i>
+                <h3>Visit Us</h3>
+                <p>45, Arena Street, Magodo,<br>Lagos, Nigeria</p>
+            </div>
+            <div class="contact-card">
+                <i class="fa-solid fa-phone"></i>
+                <h3>Call Us</h3>
+                <p>(+243) 8030298567<br>Mon-Sat: 9 AM - 6 PM</p>
+            </div>
+            <div class="contact-card">
+                <i class="fa-solid fa-envelope"></i>
+                <h3>Email Us</h3>
+                <p>hello@burgerspnc.com<br>info@burgerspnc.com</p>
+            </div>
+        </div>
+
+        <div class="contact-form-section">
+            <h2>Send Us a Message</h2>
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email-contact" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone" placeholder="Your Phone">
+                </div>
+                <div class="form-group">
+                    <select id="subject" name="subject" required>
+                        <option value="">Select Subject</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="catering">Catering Services</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="complaint">Complaint</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+            <div id="form-message" class="form-message"></div>
+        </div>
+
+        <div class="map-section">
+            <h2>Find Us Here</h2>
+            <div class="map-placeholder">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.952912260219!2d3.375295414770757!3d6.5355619952784755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc0c8959e5fcd90e!2sMagodo%2C%20Lagos!5e0!3m2!1sen!2sng!4v1616166619108!5m2!1sen!2sng" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="footer-column">
+            <div class="logo1">
+                <a href="index.html"><i class="fa-solid fa-burger"></i> BURGERS PNC</a>
+            </div>
+            <p class="savor">Savor Home Style Delights, One Bite Delivers Joy.</p>
+        </div>
+
+        <div class="footer-column1">
+            <span class="h3">Contact Us</span>
+            <p><i class="fa-solid fa-house"></i> 45, Arena Street, Magodo, Lagos.</p>
+            <p><i class="fa-solid fa-phone-volume"></i> (+243) 8030298567</p>
+            <p><i class="fa-regular fa-envelope"></i> hello@gmail.com</p>
+        </div>
+
+        <div class="footer-column2">
+            <span class="h3">Opening Hours</span>
+            <p>Monday to Friday: 9 AM - 6 PM</p>
+            <p>Saturday: 10 AM - 4 PM</p>
+            <p>Sunday: Closed</p>
+        </div>
+
+        <div class="footer-column3">
+            <span class="h3">Newsletter Subscribe</span>
+            <p>Stay in the Loop: Unlock Exclusive Offers, Culinary Insights, and More.</p>
+            <input type="email" id="email" placeholder="Your email">
+            <button onclick="subscribeNewsletter()">Subscribe</button>
+            <p id="subscribe-message"></p>
+            <p>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-pinterest-p"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </p>
+        </div>
+    </footer>
+
+    <div class="footer">
+        <p>Copyright &copy; 2025 Burger PNC | Designed by justsururoh.</p>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+    <!-- <script>
+      emailjs.init("bPcVmMGJSdBMPeawi");
+    </script> -->
+    <script src="script.js"></script>
+</body>
+</html>
